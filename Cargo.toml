@@ -9,3 +9,4 @@ edition = "2018"
 [dependencies]
 rocket = "0.4.2"
 rocket_codegen = "0.4.2"
+serde = "1.0.97"
