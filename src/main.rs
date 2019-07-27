@@ -7,6 +7,11 @@ extern crate rocket;
 
 use rocket_contrib::{Json, Value};
 
+mod hero;
+use hero::{Hero};
+
+#[post("/", data = "<hero>")]
+
 #[get("/<name>/<age>")]
 fn hello(name: String, age: u8) -> String {
     format!("Hello, {} year old named {}!", age, name)
